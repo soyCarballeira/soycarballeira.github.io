@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+
+/*collor pallete*/
+:root{
+	--color1: #02B6CD;/*#c4ba7c; /*beige*/
+	--color1b: #E8D499;/*#D7D5C0;*/
+	--color2: #E8D499;/*#f9f1a3; /*light beige*/
+	--color2b: #363638;/*#F6D066;*/
+	--color3: #0c171e; /*blue*/
+	--color4:#D92129;/* #948c5c; /*dark beige*/
+	--color5: #D3D7DA;/*#1c1c2c; /*purple*/
+	/*GAIA III*/
+	--gAzul: #02B6CD;
+	--gBeige: #E8D499;
+	--gMarron: #363638;
+	--gRojo: #D92129;
+	--gBlanco: #D3D7DA;
+	
+}
+
+/*PORTADA*/
+
+.portada {
+	margin-top: 2em;
+color: white;
+}
+
+#listaportada {
+	list-style: none;
+		padding-top: 0.5em;
+
+		padding-left: 0;
+
+	font-family: "Homemade Apple";
+	font-size: 2em;
+
+}
+
+.blob { 
+	background-image: 
+        url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMzguMywtNjIuOUM1Mi43LC01OCw2OS41LC01My45LDcyLjcsLTQzLjZDNzYsLTMzLjIsNjUuNiwtMTYuNiw2MC44LC0yLjhDNTYsMTEuMSw1Ni44LDIyLjEsNTIuNCwzMC41QzQ4LDM4LjgsMzguNSw0NC41LDI4LjksNDQuMkMxOS4zLDQzLjksOS42LDM3LjgsMiwzNC40Qy01LjcsMzEsLTExLjUsMzAuNCwtMjEuNSwzMC45Qy0zMS41LDMxLjQsLTQ1LjcsMzMsLTU1LjUsMjhDLTY1LjQsMjMuMSwtNzAuOCwxMS41LC02OS45LDAuNUMtNjkuMSwtMTAuNSwtNjEuOSwtMjEuMSwtNTQuNiwtMzAuM0MtNDcuMiwtMzkuNiwtMzkuNywtNDcuNiwtMzAuNSwtNTUuNUMtMjEuNCwtNjMuMywtMTAuNywtNzEuMSwwLjYsLTcyLjFDMTIsLTczLjIsMjMuOSwtNjcuNywzOC4zLC02Mi45WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40em;
+	padding: 15em;
+}
+/*SLIDE IN*/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*GENERADORES*/
+
+.generador {
+	border: 1px solid var(--color3);
+	padding: 1em;
+	width: 70%;
+	margin: 1em auto;
+	border-radius: 1em;
+}
+
+.generador h1{
+	border-radius:  1em;
+	background: var(--color5);
+	color: var(--color1); 
+	font-family: "Covered By Your Grace";
+}
+
+#compartirT{
+	display: none;
+}
+#compartirF{
+	display: none;
+}
+
+
+/*FOOTER*/
+
+footer{
+	background: var(--color5);
+	color: var(--color1);
+	padding: 5em;
+	/*box-shadow: 0 -0.5em 5em var(--color5);*/
+}
+
+footer .fa{
+	font-size: 1.5em;
+}
+
+footer a{
+	color: var(--color3);
+}
+
+footer a:hover{
+	color: var(--color1);
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+		 -o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+			transition: all 0.5s;
+}
+
+footer ul {
+	padding-top: 1em;
+	padding-left: 0;
+	list-style: none
+}
+
+footer li {
+	display: inline-block;
+	text-align: left;
+	margin-top: 0;
+	letter-spacing:30px;
+	font-size: 30px;
+}
